@@ -1,10 +1,6 @@
 # (c) copyright 2012 martin lurie - sample code not supported
 # all rights reserved   may not be copied or published without permission
 
-# put in some data to make a better looking graph 
-# no one likes a flat-lined stock
-hadoop fs -put BAspike.dat kafkachannel
-
 impala-shell <<eoj
 drop table if exists nysetrades;
 create external table nysetrades (
